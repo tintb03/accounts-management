@@ -20,6 +20,7 @@ class CreatePasswordsTable extends Migration
             $table->string('username');
             $table->string('password');
             $table->timestamps();
+            $table->text('icon')->nullable(); // Sử dụng kiểu dữ liệu TEXT hoặc LONGTEXT cho trường icon
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });

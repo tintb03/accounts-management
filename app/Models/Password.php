@@ -10,7 +10,7 @@ class Password extends Model
     use HasFactory;
 
     protected $fillable = [
-        'service_name', 'username', 'password',
+        'service_name', 'username', 'password','icon',
     ];
 
     // Không cần sử dụng mutator setPasswordAttribute() để mã hóa mật khẩu khi lưu vào cơ sở dữ liệu

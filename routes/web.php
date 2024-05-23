@@ -30,4 +30,5 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('passwords', PasswordController::class)->except(['show', 'index']);
 });
 
+
 require __DIR__.'/auth.php';
